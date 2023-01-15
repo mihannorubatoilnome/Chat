@@ -90,7 +90,7 @@ public class Client {
                 switch (opzioneDestinatario) {  
                     case "0":
                         // disconnessione dalla server
-                        msgSent.setCommand("4");
+                        msgSent.setCommand("3");
                         sendMessage(msgSent);
                         break;  
                     case "1":
@@ -212,8 +212,6 @@ public class Client {
         System.out.println("--------------------------------------------");
         System.out.print("Seleziona l'opzione: ");
     }
-
-    //METODI DI SERIALIZZAZIONE E DESERIALIZZAZIONE
 
     public String serializza(Msg msg) throws JsonProcessingException{
         String msgSer = mapper.writeValueAsString(msg);

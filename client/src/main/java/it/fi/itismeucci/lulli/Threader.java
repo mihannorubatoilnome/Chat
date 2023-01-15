@@ -1,7 +1,7 @@
 package it.fi.itismeucci.lulli;
 
 public class Threader extends Thread{
-    Client client;
+    public Client client;
     public Threader(Client client){
         this.client = client;
     }
@@ -13,9 +13,4 @@ public class Threader extends Thread{
             }
         } catch (Exception e) {}
     }
-
-
-
-
-
 }

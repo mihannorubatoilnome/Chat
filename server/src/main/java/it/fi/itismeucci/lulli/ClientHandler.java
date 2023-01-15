@@ -135,7 +135,7 @@ public class ClientHandler extends Thread {
                 msgReceived.setText(lista());
                 sendMessage(msgReceived);
             }
-            else if (msgReceived.getCommand().equals("4")) {
+            else if (msgReceived.getCommand().equals("3")) {
                 for (ClientHandler c : Server.clients) {
                     try {
                         if (!c.nomeUtente.equals(this.nomeUtente)) {
@@ -151,7 +151,7 @@ public class ClientHandler extends Thread {
                 Server.clients.remove(this);
                 Server.clientsName.remove(nomeUtente);
                 msgReceived.setDest(msgReceived.getDest());
-                msgReceived.setCommand("4");
+                msgReceived.setCommand("3");
                 msgReceived.setMit("Server");
                 System.out.println(nomeUtente + " si è disconnesso");
                 sendMessage(msgReceived);

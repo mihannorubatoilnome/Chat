@@ -1,7 +1,7 @@
 package it.fi.itismeucci.lulli;
 
 public class Threading  extends Thread{
-    Client client;
+    public Client client;
     public Threading(Client client){
         this.client = client;
     }

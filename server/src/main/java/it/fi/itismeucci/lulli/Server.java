@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 
 public class Server extends Thread{
-    ServerSocket server = null;
+    public ServerSocket server = null;
     
     public static ArrayList<ClientHandler> clients = new ArrayList<ClientHandler>();
     public static ArrayList<String> clientsName = new ArrayList<>();
